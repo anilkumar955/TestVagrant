@@ -47,12 +47,19 @@ public class imdbDataTest extends BaseClass{
 		System.out.println(imdbreleasedate +" "+ "imdb release date");
 		Assert.assertEquals(imdbreleasedate, "January 7, 2022 (United States)");
 	}
+	
+	//Here i am validateing both wiki and imdb country name
+	
 	@Test(priority=3)
 	public void validate_imdb_wiki_country() {
 		Assert.assertEquals(imdbCountry, wikiCountry,"both countryis are not matching");
 		Assert.assertEquals(imdbCountry, wikiCountry,"both countryis are not matching");
 		
 	}
+	
+	//Here i am validateing both wiki and imdb release date
+	
+	
 	@Test(priority=4)
 	public void validate_imdb_wiki_releasedate() {
 		Assert.assertEquals(imdbCountry, wikiCountry,"both countryis are not matching");
